@@ -20,7 +20,6 @@ static inline void SetLivePaperView(SBWallpaperView *wallpaperView, UIView *valu
 static inline UIView *CreateLivePaperView(SBWallpaperView *wallpaperView)
 {
 	UIView *livePaperView = [[[livePaperClass alloc] initWithFrame:wallpaperView.bounds] autorelease];
-	NSLog(@"LivePaper: class=%@ view=%@", livePaperClass, livePaperView);
 	if (![livePaperView isKindOfClass:[UIView class]])
 		return nil;
 	livePaperView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -36,7 +35,6 @@ static void LoadLivePaperClass()
 	NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
 	[bundle load];
 	livePaperClass = NSClassFromString([bundle objectForInfoDictionaryKey:@"LPViewClass"]);
-	NSLog(@"LivePaper: livePaperClass=%@ bundle=%@ %@", livePaperClass, bundle, [bundle objectForInfoDictionaryKey:@"LPViewClass"]);
 }
 
 %hook SBWallpaperView
