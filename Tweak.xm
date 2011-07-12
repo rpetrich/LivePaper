@@ -9,12 +9,12 @@ static Class livePaperClass;
 
 static inline UIView *GetLivePaperView(SBWallpaperView *wallpaperView)
 {
-	return objc_getAssociatedObject(wallpaperView, LivePaperKey);
+	return objc_getAssociatedObject(wallpaperView, (void *)LivePaperKey);
 }
 
 static inline void SetLivePaperView(SBWallpaperView *wallpaperView, UIView *value)
 {
-	objc_setAssociatedObject(wallpaperView, LivePaperKey, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+	objc_setAssociatedObject(wallpaperView, (void *)LivePaperKey, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 static inline UIView *CreateLivePaperView(SBWallpaperView *wallpaperView)
