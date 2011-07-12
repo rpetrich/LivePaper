@@ -1,0 +1,9 @@
+Package: com.collab.livepaper
+Priority: optional
+Section: Tweaks
+Architecture: iphoneos-arm
+Version: 0.1
+Description: Live wallpaper with plugins
+Name: LivePaper
+Depends: firmware (>= 4.0), mobilesubstrate, preferenceloader
+Author: rpetrich, zimm, infectionfx

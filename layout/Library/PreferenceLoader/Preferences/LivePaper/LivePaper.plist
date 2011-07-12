@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>LivePaper</string>
+	<key>entry</key>
+	<dict>
+		<key>cell</key>
+		<string>PSLinkCell</string>
+		<key>icon</key>
+		<string>/Library/PreferenceLoader/Preferences/LivePaper/icon.png</string>
+		<key>label</key>
+		<string>LivePaper</string>
+	</dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>© 2011 Ryan Petrich, Dan Zimmerman and Tyler Nettleton</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<string>(none)</string>
+			<key>defaults</key>
+			<string>com.collab.livepaper</string>
+			<key>key</key>
+			<string>LPActivePlugin</string>
+			<key>label</key>
+			<string>Plugin</string>
+			<key>PostNotification</key>
+			<string>com.collab.livepaper/settingschanged</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>valuesDataSource</key>
+			<string>livePaperBundleNames</string>
+			<key>titlesDataSource</key>
+			<string>livePaperBundleNames</string>
+		</dict>
+	</array>
+</dict>
+</plist>
