@@ -6,4 +6,4 @@ Version: 0.1
 Description: Live wallpaper with plugins
 Name: LivePaper
 Depends: firmware (>= 4.0), mobilesubstrate, preferenceloader
-Author: rpetrich, zimm, infectionfx
+Author: rpetrich, zimm, infectionfx, conradev
