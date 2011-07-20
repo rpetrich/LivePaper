@@ -1,8 +1,13 @@
 TWEAK_NAME = LivePaper
+BUNDLE_NAME = LivePaperSettings Fader
+
 LivePaper_FILES = Tweak.xm
 LivePaper_FRAMEWORKS = UIKit
 
-BUNDLE_NAME = Fader
+LivePaperSettings_FILES = Prefs.m
+LivePaperSettings_PRIVATE_FRAMEWORKS = Preferences
+LivePaperSettings_INSTALL_PATH = /Library/PreferenceBundles
+
 Fader_FILES = Fader.m
 Fader_FRAMEWORKS = UIKit QuartzCore
 Fader_INSTALL_PATH = /Library/LivePaper/Plugins

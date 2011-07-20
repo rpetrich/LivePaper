@@ -86,25 +86,6 @@ static void DidChangeSettings(CFNotificationCenterRef center, void *observer, CF
 	}
 }
 
-@implementation NSObject (LivePaper)
-
-- (NSArray *)livePaperBundleNames
-{
-	NSMutableArray *array = [[NSMutableArray alloc] init];
-	[array addObject:@"(none)"];
-	for (NSString *path in [[NSFileManager defaultManager] contentsOfDirectoryAtPath:@"/Library/LivePaper/Plugins" error:NULL]) {
-		if ([path hasPrefix:@"."])
-			continue;
-		if ([path hasSuffix:@".bundle"])
-			[array addObject:[path substringToIndex:[path length]-7]];
-	}
-	NSArray *result = [array sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-	[array release];
-	return result;
-}
-
-@end
-
 %ctor
 {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
