@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Tile Width</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>label</key>
+			<string>Width</string>
+			<key>max</key>
+			<integer>320</integer>
+			<key>default</key>
+			<integer>80</integer>
+			<key>defaults</key>
+			<string>com.thezimm.livepaper.mosaicpaper</string>
+			<key>key</key>
+			<string>tilewidth</string>
+			<key>PostNotification</key>
+			<string>com.thezimm.livepaper.mosaicpaper.changed</string>
+			<key>min</key>
+			<integer>1</integer>
+			<key>id</key>
+			<string>tilewidth</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Tile Height</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>label</key>
+			<string>Height</string>
+			<key>max</key>
+			<integer>480</integer>
+			<key>default</key>
+			<integer>80</integer>
+			<key>defaults</key>
+			<string>com.thezimm.livepaper.mosaicpaper</string>
+			<key>key</key>
+			<string>tileheight</string>
+			<key>PostNotification</key>
+			<string>com.thezimm.livepaper.mosaicpaper.changed</string>
+			<key>min</key>
+			<integer>1</integer>
+			<key>id</key>
+			<string>tileheight</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<string>blackColor</string>
+			<key>defaults</key>
+			<string>com.thezimm.livepaper.mosaicpaper</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>bgcolor</string>
+			<key>label</key>
+			<string>Background Color</string>
+			<key>validTitles</key>
+			<array>
+				<string>Clear</string>
+				<string>White</string>
+				<string>Black</string>
+				<string>Blue</string>
+				<string>Green</string>
+				<string>Red</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<string>clearColor</string>
+				<string>whiteColor</string>
+				<string>blackColor</string>
+				<string>blueColor</string>
+				<string>greenColor</string>
+				<string>redColor</string>
+			</array>
+			<key>PostNotification</key>
+			<string>com.thezimm.livepaper.mosaicpaper.changed</string>
+			<key>id</key>
+			<string>bgcolor</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Reset to Defaults</string>
+			<key>action</key>
+			<string>resetSettings</string>
+			<key>defaults</key>
+			<string>com.thezimm.livepaper.mosaicpaper</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>isStaticText</key>
+			<string>true</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSTitleValueCell</string>
+			<key>label</key>
+			<string>MosaicPaper is © 2011 under Dan Zimmerman</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>MosaicPaper is © 2011 under Dan Zimmerman</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>MosaicPaper</string>
+</dict>
+</plist>
