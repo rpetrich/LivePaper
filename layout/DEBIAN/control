@@ -1,5 +1,5 @@
 Package: com.collab.livepaper
-Conflicts: com.thezimm.livepaper.MosaicPaper
+Conflicts: com.thezimm.livepaper.MosaicPaper, com.thezimm.livepaper.MapPaper
 Priority: optional
 Section: Tweaks
 Architecture: iphoneos-arm
