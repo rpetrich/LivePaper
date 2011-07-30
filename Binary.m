@@ -89,7 +89,6 @@ typedef enum LPBinaryDataType {
 #pragma mark Control Methods
 
 - (void)loadSettings {    
-    NSLog(@"CBK :: RELOADING SETTINGS");
 
     NSDictionary *settings = [NSDictionary dictionaryWithContentsOfFile:@"/private/var/mobile/Library/Preferences/com.collab.livepaper.binary.plist"];
     
